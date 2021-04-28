@@ -1,0 +1,19 @@
+<launch>
+
+    <param name="use_sim_time" value="true" />
+
+    <param name="/origin_frame" value="/map"/>
+    <param name="/vehicle_frame" value="/base_link"/>
+    <param name="/refer_line_num" value="0"/>
+
+<!--    <node pkg="rviz" type="rviz" name="map"  args="-d $(find coordinate_transformation)/cfig/rviz.rviz" /> -->
+
+<!--    <node name="braoadcast_transform_node" pkg="coordinate_transformation" type="broadcast_node.py" output="screen"/> -->
+<!--    <node name="SensoInfo_node" pkg="coordinate_transformation" type="SensoInfo_node.py" output="screen"/> -->
+<!--    <node name="coordinate_transformation_node" pkg="coordinate_transformation" type="coordinate_transformation.py" output="screen"/> -->
+<!--    <node name="visualization_node" pkg="coordinate_transformation" type="visualization_objects.py" output="screen"/> -->
+<!--    <node name="fused_objlist_node" pkg="coordinate_transformation" type="radar_lidar_fusion.py" output="screen"/> -->
+<!--    <node name="transform_verification_node" pkg="coordinate_transformation" type="verify_objects_pose.py" output="screen"/> -->
+    <node name="coordinate_transformation_node" pkg="coordinate_transformation" type="coordinate_transformation_node" respawn="true" output="screen"/>
+</launch>
+

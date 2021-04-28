@@ -1,0 +1,13 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = GUI-Config 8.0
+CM.Exe = Data/Auxiliary/Car_CMake
+CM.Args =
+CM.Exe.History:
+	Data/Auxiliary/Car_CMake
+	Data/Auxiliary/Car_CMake_new
+	/home/cui/CarMaker_Projects/Data/Auxiliary/Car_CMake_new
+	/home/cui/city_planning/devel/lib/carmaker8_ros/Car_CMake
+	CarMaker.linux64
+CM.Args.History:
+	""
+GPUParameters.FName =

@@ -1,0 +1,116 @@
+APPLICATION	CarMaker 8.1 - Car_Generic #52 (linux64-8.1)
+COMPILED	pt@pluto.ipg 2019-11-08 10:56:52
+FIRST_INIT	(internal default used)	2021-01-06 15:32:17
+TIME	0.000
+SIM_END			0s	0m
+IDLE	15:32:18
+SIM_START	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs	2021-01-06 15:32:19
+TIME	0.000
+SIMULATE	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs
+
+TIME	27.257
+SIM_END		Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs	27.254s	214.656m
+SIM_START	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs	2021-01-06 15:32:29
+TIME	0.000
+SIMULATE	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs
+
+TIME	20.690
+SIM_END		Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs	20.687s	214.313m
+SIM_START	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs	2021-01-06 15:32:38
+TIME	0.000
+SIMULATE	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs
+
+TIME	16.961
+SIM_END		Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs	16.958s	213.875m
+SIM_START	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs	2021-01-06 15:32:45
+TIME	0.000
+SIMULATE	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs
+
+TIME	14.508
+SIM_END		Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs	14.505s	213.653m
+SIM_START	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs	2021-01-06 15:32:52
+TIME	0.000
+SIMULATE	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs
+
+TIME	12.824
+SIM_END		Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs	12.821s	213.15m
+SIM_START	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs	2021-01-06 15:32:58
+TIME	0.000
+SIMULATE	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs
+
+TIME	11.639
+SIM_END		Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs	11.636s	212.654m
+SIM_START	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	2021-01-06 15:33:04
+TIME	0.000
+SIMULATE	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm
+
+TIME	78.000
+SIM_END		Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	77.997s	642.878m
+SIM_START	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	2021-01-06 15:33:32
+TIME	0.000
+SIMULATE	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm
+
+TIME	40.178
+SIM_END		Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	40.175s	430.846m
+SIM_START	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	2021-01-06 15:33:47
+TIME	0.000
+SIMULATE	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm
+
+TIME	27.713
+SIM_END		Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	27.71s	363.208m
+SIM_START	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	2021-01-06 15:33:58
+TIME	0.000
+SIMULATE	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm
+
+TIME	21.342
+SIM_END		Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	21.337s	327.52m
+TIME	520.238
+SIM_START	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	2021-01-06 16:57:15
+TIME	0.004
+WARNING		Vehicle start position corrected from -2.000 m to 0.000 m
+ERROR		Traffic object 2: failed to select route -1
+ERROR		Can't get parameters of traffic object 2 (2)
+SIM_ABORT	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	0s	327.52m
+TIME	9.940
+SIM_START	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	2021-01-06 16:58:55
+TIME	9.940
+WARNING		Vehicle start position corrected from -2.000 m to 0.000 m
+TIME	0.010
+ERROR		Traffic object 2: failed to select route -1
+ERROR		Can't get parameters of traffic object 2 (2)
+SIM_ABORT	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	0s	0m
+TIME	3.822
+SIM_START	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	2021-01-06 16:59:33
+TIME	0.010
+ERROR		Traffic object 2: failed to select route -1
+ERROR		Can't get parameters of traffic object 2 (2)
+SIM_ABORT	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	0s	0m
+TIME	8.148
+SIM_START	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	2021-01-06 17:00:55
+TIME	0.010
+ERROR		Traffic object 2: failed to select route -1
+ERROR		Can't get parameters of traffic object 2 (2)
+SIM_ABORT	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	0s	0m
+TIME	12.728
+SIM_START	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	2021-01-06 17:03:02
+TIME	0.000
+SIMULATE	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm
+
+TIME	77.018
+SIM_END		Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	77.015s	1064.33m
+SIM_START	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	2021-01-06 17:03:43
+TIME	0.000
+SIMULATE	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm
+
+TIME	77.018
+SIM_END		Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	77.015s	1064.33m
+TIME	91.626
+SIM_START	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	2021-01-06 17:06:36
+TIME	0.000
+SIMULATE	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm
+
+TIME	77.018
+SIM_END		Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	77.015s	1064.33m
+TIME	111.703
+SHUTDOWN	CarMaker quick shutdown initiated
+

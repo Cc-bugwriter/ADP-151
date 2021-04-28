@@ -1,0 +1,13 @@
+<!-- -->
+<launch>
+
+        <arg name="mapFileName" default="$(find waypoint_loader)/cfig/waypoint_straight.csv" />
+
+
+        <node pkg="waypoint_loader" type="waypoint_loader_node" name="waypoint_loader_node" output="screen">
+            <param name="mapFileName"                           value="$(arg mapFileName)" />
+        </node>
+
+      <!-- <node pkg="rviz" type="rviz" name="map"  args="-d $(find waypoint_loader)/cfig/rviz.rviz" /> -->
+
+</launch>

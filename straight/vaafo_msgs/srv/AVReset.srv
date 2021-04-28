@@ -1,0 +1,5 @@
+bool reset   # whether reset is sent
+vaafo_msgs/CarInfo carinfo_ #send reset status of driver
+---
+bool  res    # result of triggered service
+

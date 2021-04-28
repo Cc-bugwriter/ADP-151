@@ -1,0 +1,17 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = Scenario-LaneConfig 1.0
+FileCreator = CarMaker 8.1 2019-11-07
+
+Name = Default
+Prio = 3
+
+LaneL.0 = road 3.5
+LaneL.1 = border 1.0
+LaneR.0 = road 3.5
+LaneR.1 = border 1.0
+
+RoadMarkingL.0 = line 2.0 4.0 0.15 {1.0 1.0 1.0}
+RoadMarkingL.1 = none 2.0 4.0 0.15 {1.0 1.0 1.0}
+RoadMarkingR.0 = line 2.0 4.0 0.15 {1.0 1.0 1.0}
+RoadMarkingR.1 = none 2.0 4.0 0.15 {1.0 1.0 1.0}
+RoadMarkingC = dash 2.0 4.0 0.15 {1.0 1.0 1.0}

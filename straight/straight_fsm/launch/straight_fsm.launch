@@ -1,0 +1,8 @@
+<launch>
+
+    <param name="use_sim_time" value="true" />
+
+    <node name="straightfsm_node" pkg="straight_fsm" type="straight_fsm_node" respawn="true" output="screen"/>
+    <include file="$(find tf_map)/launch/tf_map.launch" />
+</launch>
+

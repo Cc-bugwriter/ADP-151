@@ -1,0 +1,10 @@
+APPLICATION	CarMaker 8.1 - Car_Generic #52 (linux64-8.1)
+COMPILED	pt@pluto.ipg 2019-11-08 10:56:52
+ERROR		Unable to obtain CarMaker license: license server timeout (-11)
+		System: Laptop-Yi ether 00:15:5d:a2:dc:81
+		License file: /opt/ipg/etc/Licenses
+		
+ERROR		FATAL ERROR - Application stopped
+		Eliminate the error and restart the application
+SHUTDOWN	CarMaker quick shutdown initiated
+

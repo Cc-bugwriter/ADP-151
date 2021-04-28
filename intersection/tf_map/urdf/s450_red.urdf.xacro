@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="aDDa_S450">
+
+  <xacro:property name="deg_to_rad" value="0.0174533" />
+
+  <!-- Links -->
+  <link name="base_link" >
+    <visual name="base_visual">
+      <origin xyz="-1.2 0 0.0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://tf_map/meshes/s450_red.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <!-- Sensors -->
+  <!-- <link name="velodyne"/> -->
+  <link name="ibeo_lux_front"/>
+  <link name="ibeo_lux_rear"/>
+
+  <link name="camera"/>
+  <link name="front_stereo_left"/>
+
+  <link name="astyx"/>
+
+  <link name="lane_cam"/>
+  <!-- <link name="radar"/> -->
+
+  <!-- link name="adma_imu"/ -->
+  <link name="adma_gps"/>
+
+  <!-- link name="stereo_camera_right"/ -->
+  <!-- link name="wideangle_camera_front"/ -->
+
+
+  <!-- Fixed Joints -->
+  <!-- Sensors
+  <joint name="velodyne" type="fixed">
+    <parent link="base_link"/>
+    <child link="velodyne"/>
+    <origin xyz="1.331 0.009 1.686" rpy="0 0 ${270 * deg_to_rad}" />
+  </joint> -->
+
+  <joint name="ibeo_lux_front" type="fixed">
+    <parent link="base_link"/>
+    <child link="ibeo_lux_front"/>
+    <origin xyz="3.961 0.25 0.289" rpy="0 0 0" />
+  </joint>
+
+  <joint name="ibeo_lux_rear" type="fixed">
+    <parent link="base_link"/>
+    <child link="ibeo_lux_rear"/>
+    <origin xyz="-1.229 -0.02 0.253" rpy="0 0 ${180 * deg_to_rad}" />
+  </joint>
+
+  <joint name="astyx" type="fixed">
+    <parent link="base_link"/>
+    <child link="astyx"/>
+    <origin xyz="4.052 0 0.165" rpy="0 0 0" />
+  </joint>
+
+  <joint name="adma_gps" type="fixed">
+    <parent link="base_link"/>
+    <child link="adma_gps"/>
+    <origin xyz="0.745 0.425 1.423" rpy="0 0 0" />
+  </joint>
+
+  <!-- "Position" of the stereo camera (at the same position as stereo left) -->
+  <joint name="camera" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera"/>
+    <origin xyz="2.1 0.2 0.93" rpy="1.57 3.14 1.535" />
+  </joint>
+
+  <joint name="front_stereo_left" type="fixed">
+    <parent link="camera"/>
+    <child link="front_stereo_left"/>
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+
+  <!-- Vehicle Radar
+  <joint name="radar" type="fixed">
+    <parent link="base_link"/>
+    <child link="radar"/>
+    <origin xyz="4.025 -0.002 0.292" rpy="0 0 0" />
+  </joint> -->
+
+  <!-- Vehicle camera for lane detection -->
+  <joint name="lane_cam" type="fixed">
+    <parent link="base_link"/>
+    <child link="lane_cam"/>
+    <origin xyz="3.96 0 0" rpy="0 0 0" />
+  </joint>
+</robot>

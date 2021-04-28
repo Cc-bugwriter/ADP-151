@@ -1,0 +1,13 @@
+std_msgs/Header header
+int8 traffic_id
+geometry_msgs/Pose pose
+geometry_msgs/Twist velocity
+geometry_msgs/Twist acceleration
+geometry_msgs/Point dimension
+geometry_msgs/Twist rel_velocity
+float64 rel_Ref_dis
+float64 rel_Near_dis
+float64 rel_Ref_azimut
+float64 rel_Near_azimut
+float64 rel_Ref_orientation
+float64 rel_Ref_vel

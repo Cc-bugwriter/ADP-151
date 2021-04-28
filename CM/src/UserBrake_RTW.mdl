@@ -1,0 +1,2312 @@
+Model {
+  Name			  "UserBrake_RTW"
+  Version		  8.7
+  MdlSubVersion		  1
+  SavedCharacterEncoding  "ISO-8859-15"
+  GraphicalInterface {
+    NumRootInports	    2
+    Inport {
+      Name		      "FromCM"
+      BusObject		      "cmBrakeIn"
+      OutputFunctionCall      "off"
+      UnitExpr		      "inherit"
+    }
+    Inport {
+      Name		      "CfgInFromCM"
+      BusObject		      "cmBrakeCfgIn"
+      OutputFunctionCall      "off"
+      UnitExpr		      "inherit"
+    }
+    NumRootOutports	    1
+    Outport {
+      Name		      "ToCM"
+      BusObject		      "cmBrakeOut"
+      BusOutputAsStruct	      "off"
+      UnitExpr		      "inherit"
+    }
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.8"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+    NumProvidedFunctions    0
+    NumRequiredFunctions    0
+  }
+  Description		  "CarMaker Plug-in Model Target"
+  PreLoadFcn		  "vehicle = 'Car'; if ~length(which('cmcmd')), cmenv; end\nUserBrake_RTW_bus"
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime off
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  InitFcn		  "vehicle = 'Car'; if ~length(which('cmcmd')), cmenv; end\nUserBrake_RTW_bus"
+  LastSavedArchitecture	  "glnxa64"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [0.0, 0.0, 848.0, 745.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[806.0, 571.0]
+	ZoomFactor		[1.0]
+	Offset			[0.0, 0.0]
+      }
+    }
+  }
+  Created		  "Tue May 26 11:44:28 2015"
+  Creator		  "IPG"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "IPG"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Tue Oct 01 08:27:50 2019"
+  RTWModifiedTimeStamp	  491819269
+  ModelVersionFormat	  "1.%<AutoIncrement:8>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowEditTimeErrors	  on
+  ShowEditTimeWarnings	  off
+  ShowEditTimeAdvisorChecks off
+  ShowPortUnits		  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  VariantCondition	  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ShowVisualizeInsertedRTB on
+  ShowMarkup		  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  FunctionConnectors	  off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    6
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "UserBrake_RTW"
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "UserBrake_RTW"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      ""
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      7
+      Version		      "1.16.2"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  8
+	  Version		  "1.16.2"
+	  StartTime		  "0.0"
+	  StopTime		  "inf"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.001"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "SingleTasking"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode1"
+	  SolverName		  "ode1"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverInfoToggleStatus  off
+	  IsAutoAppliedInSIP	  off
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  9
+	  Version		  "1.16.2"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  VisualizeSimOutput	  on
+	  StreamToWorkspace	  off
+	  StreamVariableName	  "streamout"
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	  LoggingToFile		  off
+	  LoggingFileName	  "out.mat"
+	  LoggingIntervals	  "[-inf, inf]"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  10
+	  Version		  "1.16.2"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  DefaultParameterBehavior "Tunable"
+	  UseDivisionForNetSlopeComputation "off"
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  CachingGlobalReferences off
+	  GlobalBufferReuse	  on
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  PassReuseOutputArgsThreshold 12
+	  ExpressionDepthLimit	  2147483647
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  11
+	  Version		  "1.16.2"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "UseLocalSettings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "error"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  AllowSymbolicDim	  on
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  SymbolicDimMinMaxWarning "warning"
+	  LossOfSymbolicDimsSimulationWarning "warning"
+	  LossOfSymbolicDimsCodeGenerationWarning "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	  SFOutputUsedAsStateInMooreChartDiag "error"
+	  IntegerSaturationMsg	  "warning"
+	  AllowedUnitSystems	  "all"
+	  UnitsInconsistencyMsg	  "warning"
+	  AllowAutomaticUnitConversions	on
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  12
+	  Version		  "1.16.2"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "32-bit Generic"
+	  TargetUnknown		  off
+	  ProdEqTarget		  off
+	  UseEmbeddedCoderFeatures on
+	  UseSimulinkCoderFeatures on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  13
+	  Version		  "1.16.2"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  EnableRefExpFcnMdlSchedulingChecks on
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  14
+	  Version		  "1.16.2"
+	  SFSimEcho		  on
+	  SimCtrlC		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  15
+	  Version		  "1.16.2"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    9
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "CarMaker.tlc"
+	  HardwareBoard		  "None"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  TemplateMakefile	  "CarMaker_unix-linux64.tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  "CarMaker Plug-in Model Target"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  GenerateMissedCodeReplacementReport off
+	  RTWCompilerOptimization "off"
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      16
+	      Version		      "1.16.2"
+	      Array {
+		Type			"Cell"
+		Dimension		21
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		Cell			"InsertPolySpaceComments"
+		Cell			"MATLABFcnDesc"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      CommentStyle	      "Auto"
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      63
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.STFCustomTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      17
+	      Version		      "1.16.2"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"PortableWordSizes"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"GenerateAllocFcn"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      GenFloatMathFcnCalls    "NOT IN USE"
+	      TargetLangStandard      "C89/C90 (ANSI)"
+	      CodeReplacementLibrary  "None"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      InferredTypesCompatibility off
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      ModelReferenceCompliant off
+	      ParMdlRefBuildCompliant off
+	      CompOptLevelCompliant   off
+	      ConcurrentExecutionCompliant off
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      off
+	      MultiInstanceERTCode    on
+	      CodeInterfacePackaging  "Reusable function"
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      ParenthesesLevel	      "Nominal"
+	      CastingMode	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    on
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      GenerateAllocFcn	      on
+	      UseToolchainInfoCompliant	off
+	      GenerateSharedConstants on
+	      SystemTargetFile	      "CarMaker.tlc"
+	      DialogCategory	      0
+	      Array {
+		Type			"Handle"
+		Dimension		1
+		Simulink.GRTTargetCC {
+		  $BackupClass		  "Simulink.TargetCC"
+		  $ObjectID		  18
+		  Version		  "1.16.2"
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    15
+		    Cell		    "GeneratePreprocessorConditionals"
+		    Cell		    "IncludeMdlTerminateFcn"
+		    Cell		    "SupportNonInlinedSFcns"
+		    Cell		    "SuppressErrorStatus"
+		    Cell		    "ERTCustomFileBanners"
+		    Cell		    "GenerateSampleERTMain"
+		    Cell		    "GenerateTestInterfaces"
+		    Cell		    "ModelStepFunctionPrototypeControlCompliant"
+		    Cell		    "CPPClassGenCompliant"
+		    Cell		    "MultiInstanceERTCode"
+		    Cell		    "PurelyIntegerCode"
+		    Cell		    "PortableWordSizes"
+		    Cell		    "SupportComplex"
+		    Cell		    "SupportAbsoluteTime"
+		    Cell		    "SupportContinuousTime"
+		    PropName		    "DisabledProps"
+		  }
+		  TargetFcnLib		  "ansi_tfl_table_tmw.mat"
+		  TargetLibSuffix	  ""
+		  GenFloatMathFcnCalls	  "NOT IN USE"
+		  TargetLangStandard	  "C89/C90 (ANSI)"
+		  CodeReplacementLibrary  "None"
+		  UtilityFuncGeneration	  "Auto"
+		  ERTMultiwordTypeDef	  "System defined"
+		  ERTMultiwordLength	  256
+		  MultiwordLength	  2048
+		  GenerateFullHeader	  on
+		  InferredTypesCompatibility off
+		  GenerateSampleERTMain	  off
+		  GenerateTestInterfaces  off
+		  ModelReferenceCompliant off
+		  ParMdlRefBuildCompliant off
+		  CompOptLevelCompliant	  off
+		  ConcurrentExecutionCompliant off
+		  IncludeMdlTerminateFcn  on
+		  GeneratePreprocessorConditionals "Disable all"
+		  CombineOutputUpdateFcns off
+		  CombineSignalStateStructs off
+		  SuppressErrorStatus	  off
+		  ERTFirstTimeCompliant	  off
+		  IncludeFileDelimiter	  "Auto"
+		  ERTCustomFileBanners	  off
+		  SupportAbsoluteTime	  on
+		  LogVarNameModifier	  "rt_"
+		  MatFileLogging	  off
+		  MultiInstanceERTCode	  on
+		  CodeInterfacePackaging  "Reusable function"
+		  SupportNonFinite	  on
+		  SupportComplex	  on
+		  PurelyIntegerCode	  off
+		  SupportContinuousTime	  on
+		  SupportNonInlinedSFcns  on
+		  SupportVariableSizeSignals off
+		  ParenthesesLevel	  "Nominal"
+		  CastingMode		  "Nominal"
+		  MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+		  ModelStepFunctionPrototypeControlCompliant off
+		  CPPClassGenCompliant	  on
+		  AutosarCompliant	  off
+		  GRTInterface		  off
+		  GenerateAllocFcn	  on
+		  UseToolchainInfoCompliant off
+		  GenerateSharedConstants on
+		  UseMalloc		  off
+		  ExtMode		  off
+		  ExtModeStaticAlloc	  off
+		  ExtModeTesting	  off
+		  ExtModeStaticAllocSize  1000000
+		  ExtModeTransport	  0
+		  ExtModeMexFile	  "noextcomm"
+		  ExtModeIntrfLevel	  "Level1"
+		  RTWCAPISignals	  off
+		  RTWCAPIParams		  off
+		  RTWCAPIStates		  off
+		  RTWCAPIRootIO		  off
+		  GenerateASAP2		  off
+		  MultiInstanceErrorCode  "Error"
+		}
+		PropName		"Components"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"HilProjDir"
+		Value			".."
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"HilProjHookup"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"HilProjMake"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"HilVerboseMake"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType__fs_u3_CarMaker_workjaw_WorkDevel_81_fake_linux64_Matlab_R2016a_CarMaker_1HilVehicleT"
+		"ype"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "Car"
+		  Value			  1
+		  String		  "Motorcycle"
+		  Value			  2
+		  String		  "Truck"
+		}
+		Name			"HilVehicleType"
+		Value			"Car"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType__fs_u3_CarMaker_workjaw_WorkDevel_81_fake_linux64_Matlab_R2016a_CarMaker_1HilWrapperT"
+		"ype"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "Aero"
+		  Value			  1
+		  String		  "Brake"
+		  Value			  2
+		  String		  "Environment"
+		  Value			  3
+		  String		  "HydBrakeSystem"
+		  Value			  4
+		  String		  "HydBrakeControl"
+		  Value			  5
+		  String		  "AirBrakeSystem"
+		  Value			  6
+		  String		  "AirBrakeControl"
+		  Value			  7
+		  String		  "PowerTrain"
+		  Value			  8
+		  String		  "PowerTrainXWD"
+		  Value			  9
+		  String		  "PTBattery"
+		  Value			  10
+		  String		  "PTBatteryCU"
+		  Value			  11
+		  String		  "PTClutch"
+		  Value			  12
+		  String		  "PTControl"
+		  Value			  13
+		  String		  "PTControlOSM"
+		  Value			  14
+		  String		  "PTDriveLine"
+		  Value			  15
+		  String		  "PTDriveLineXWD"
+		  Value			  16
+		  String		  "PTEngine"
+		  Value			  17
+		  String		  "PTEngineCU"
+		  Value			  18
+		  String		  "PTGearBox"
+		  Value			  19
+		  String		  "PTGenCoupling"
+		  Value			  20
+		  String		  "PTMotor"
+		  Value			  21
+		  String		  "PTMotorCU"
+		  Value			  22
+		  String		  "PTPowerSupply"
+		  Value			  23
+		  String		  "PTTransmCU"
+		  Value			  24
+		  String		  "Steering"
+		  Value			  25
+		  String		  "SuspExtFrcs"
+		  Value			  26
+		  String		  "SuspEF_Spring"
+		  Value			  27
+		  String		  "SuspEF_Damper"
+		  Value			  28
+		  String		  "SuspEF_Buffer"
+		  Value			  29
+		  String		  "SuspEF_Stabi"
+		  Value			  30
+		  String		  "SuspKnC"
+		  Value			  31
+		  String		  "TireCPI"
+		  Value			  32
+		  String		  "TireCPMod"
+		  Value			  33
+		  String		  "TireSTI"
+		  Value			  34
+		  String		  "UserDriver"
+		  Value			  35
+		  String		  "Vehicle_Car"
+		  Value			  36
+		  String		  "VehicleControl"
+		  Value			  37
+		  String		  "VhclOperator"
+		  Value			  38
+		  String		  "Plain"
+		  Value			  39
+		  String		  "Generic"
+		}
+		Name			"HilWrapperType"
+		Value			"Brake"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"HilDescription"
+		Value			"UserBrake_RTW"
+	      }
+	      CustomProperty {
+		DataType		"int32"
+		Name			"HilParamId"
+		Value			1
+	      }
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	SlCovCC.ConfigComp {
+	  $ObjectID		  19
+	  Version		  "1.16.2"
+	  Description		  "Simulink Coverage Configuration Component"
+	  Name			  "Simulink Coverage"
+	  CovEnable		  off
+	  CovScope		  "EntireSystem"
+	  CovIncludeTopModel	  on
+	  RecordCoverage	  off
+	  CovPath		  "/"
+	  CovSaveName		  "covdata"
+	  CovMetricSettings	  "dw"
+	  CovNameIncrementing	  off
+	  CovHtmlReporting	  on
+	  CovForceBlockReductionOff on
+	  CovEnableCumulative	  on
+	  CovSaveCumulativeToWorkspaceVar on
+	  CovSaveSingleToWorkspaceVar on
+	  CovCumulativeVarName	  "covCumulativeData"
+	  CovCumulativeReport	  off
+	  CovSaveOutputData	  on
+	  CovOutputDir		  "slcov_output/$ModelName$"
+	  CovDataFileName	  "$ModelName$_cvdata"
+	  CovReportOnPause	  on
+	  CovModelRefEnable	  "Off"
+	  CovExternalEMLEnable	  off
+	  CovSFcnEnable		  on
+	  CovBoundaryAbsTol	  1e-05
+	  CovBoundaryRelTol	  0.01
+	  CovUseTimeInterval	  off
+	  CovStartTime		  0
+	  CovStopTime		  0
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      ExtraOptions	      "-aGenerateTraceInfo=0 -aIgnoreTestpoints=0 "
+      CurrentDlgPage	      "Code Generation/CarMaker"
+      ConfigPrmDlgPosition     [ 512, 235, 1600, 923 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    7
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    20
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "opaque"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      BusCreator
+      DisplayOption	      "none"
+      OutDataTypeStr	      "Inherit: auto"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      BusSelector
+      OutputSignals	      "signal1,signal2,signal3"
+      OutputAsBus	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      Unit		      "inherit"
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      Unit		      "inherit"
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      RateTransition
+      Integrity		      on
+      Deterministic	      on
+      X0		      "0"
+      OutPortSampleTimeOpt    "Specify"
+      OutPortSampleTimeMultiple	"1"
+      OutPortSampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      Opaque		      off
+      MaskHideContents	      off
+      SFBlockType	      "NONE"
+      GeneratePreprocessorConditionals off
+      TreatAsGroupedWhenPropagatingVariantConditions on
+      ContentPreviewEnabled   off
+      IsWebBlock	      off
+    }
+    Block {
+      BlockType		      Terminator
+    }
+  }
+  System {
+    Name		    "UserBrake_RTW"
+    Location		    [0, 0, 848, 745]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "83"
+    Block {
+      BlockType		      Inport
+      Name		      "FromCM"
+      SID		      "1"
+      Position		      [40, 65, 60, 75]
+      ZOrder		      -1
+      BackgroundColor	      "cyan"
+      IconDisplay	      "Port number"
+      OutDataTypeStr	      "Bus: cmBrakeIn"
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "CfgInFromCM"
+      SID		      "8"
+      Position		      [40, 165, 60, 175]
+      ZOrder		      -2
+      BackgroundColor	      "cyan"
+      Port		      "2"
+      IconDisplay	      "Port number"
+      OutDataTypeStr	      "Bus: cmBrakeCfgIn"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Brake Example"
+      SID		      "29"
+      Ports		      [1, 2]
+      Position		      [250, 29, 380, 111]
+      ZOrder		      -3
+      BackgroundColor	      "orange"
+      RequestExecContextInheritance off
+      Variant		      off
+      System {
+	Name			"Brake Example"
+	Location		[361, 282, 959, 852]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Pedal"
+	  SID			  "30"
+	  Position		  [30, 28, 60, 42]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "BrakeFrcMax"
+	  SID			  "31"
+	  Position		  [25, 85, 65, 115]
+	  ZOrder		  -2
+	  Value			  "300"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  SID			  "32"
+	  Position		  [215, 30, 245, 60]
+	  ZOrder		  -3
+	  Gain			  "180.0/300.0"
+	  Port {
+	    PortNumber		    1
+	    Name		    "pMC"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Pedal Force"
+	  SID			  "33"
+	  Ports			  [2, 1]
+	  Position		  [150, 25, 190, 65]
+	  ZOrder		  -4
+	  RndMeth		  "Floor"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Trq_WB Front"
+	  SID			  "34"
+	  Ports			  [2, 1]
+	  Position		  [320, 101, 365, 134]
+	  ZOrder		  -5
+	  RndMeth		  "Floor"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Trq_WB_Front"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Trq_WB Rear"
+	  SID			  "35"
+	  Ports			  [2, 1]
+	  Position		  [320, 161, 365, 194]
+	  ZOrder		  -6
+	  RndMeth		  "Floor"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Trq_WB_Rear"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "pWB2Trq Front"
+	  SID			  "36"
+	  Position		  [160, 110, 190, 140]
+	  ZOrder		  -7
+	  Value			  "10"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "pWB2Trq Rear"
+	  SID			  "37"
+	  Position		  [160, 170, 190, 200]
+	  ZOrder		  -8
+	  Value			  "4"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Trq_WB_Front"
+	  SID			  "38"
+	  Position		  [460, 113, 490, 127]
+	  ZOrder		  -9
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Trq_WB_Rear"
+	  SID			  "39"
+	  Position		  [460, 173, 490, 187]
+	  ZOrder		  -10
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  Name			  "Trq_WB_Rear"
+	  ZOrder		  1
+	  Labels		  [0, 0]
+	  SrcBlock		  "Trq_WB Rear"
+	  SrcPort		  1
+	  DstBlock		  "Trq_WB_Rear"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Trq_WB_Front"
+	  ZOrder		  2
+	  Labels		  [0, 0]
+	  SrcBlock		  "Trq_WB Front"
+	  SrcPort		  1
+	  DstBlock		  "Trq_WB_Front"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Pedal"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Pedal Force"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "BrakeFrcMax"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, -45]
+	  DstBlock		  "Pedal Force"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "pMC"
+	  ZOrder		  5
+	  Labels		  [1, 1]
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, 65]
+	  Branch {
+	    ZOrder		    6
+	    Points		    [0, 60]
+	    DstBlock		    "Trq_WB Rear"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    7
+	    DstBlock		    "Trq_WB Front"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  8
+	  SrcBlock		  "pWB2Trq Front"
+	  SrcPort		  1
+	  DstBlock		  "Trq_WB Front"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  9
+	  SrcBlock		  "pWB2Trq Rear"
+	  SrcPort		  1
+	  DstBlock		  "Trq_WB Rear"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  10
+	  SrcBlock		  "Pedal Force"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Annotation {
+	  SID			  "44"
+	  Name			  "Run this example with the Examples/BasicFunctions/Simulink/Hockenheim_UserBrake_RTW testrun."
+	  Position		  [86, 285, 534, 299]
+	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
+	  ZOrder		  -1
+	}
+	Annotation {
+	  SID			  "45"
+	  Position		  [30, 180, 32, 194]
+	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
+	  ZOrder		  -2
+	}
+	Annotation {
+	  SID			  "46"
+	  Name			  "Please note: Influence of DrivMan.Handbrake on the braking\ntorques (Brake IF Trq_XX signals) is ignored "
+	  "in this example."
+	  Position		  [174, 236, 444, 262]
+	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
+	  ZOrder		  -3
+	}
+	Annotation {
+	  SID			  "47"
+	  Position		  [229, 256, 231, 270]
+	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
+	  ZOrder		  -4
+	}
+      }
+    }
+    Block {
+      BlockType		      BusSelector
+      Name		      "CfgIF_In_Selector"
+      SID		      "9"
+      Ports		      [1, 1]
+      Position		      [100, 140, 110, 200]
+      ZOrder		      -4
+      BackgroundColor	      "cyan"
+      OutputSignals	      "VehicleClassId"
+      Port {
+	PortNumber		1
+	Name			"<VehicleClassId>"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "CfgIF_In_Terminator"
+      SID		      "10"
+      Position		      [220, 160, 240, 180]
+      ZOrder		      -5
+    }
+    Block {
+      BlockType		      BusSelector
+      Name		      "IF_In_Selector"
+      SID		      "2"
+      Ports		      [1, 1]
+      Position		      [100, 30, 110, 110]
+      ZOrder		      -6
+      BackgroundColor	      "cyan"
+      OutputSignals	      "Pedal"
+      Port {
+	PortNumber		1
+	Name			"<Pedal>"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "IF_Out_Selector"
+      SID		      "48"
+      Ports		      [8, 1]
+      Position		      [500, 30, 690, 210]
+      ZOrder		      5
+      BackgroundColor	      "cyan"
+      UserDataPersistent      on
+      UserData		      "DataTag0"
+      OpenFcn		      "cmSignalSelect('SignalSelection_CB',gcb)"
+      RequestExecContextInheritance off
+      Variant		      off
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		21
+	$ClassName		"Simulink.Mask"
+	Type			"Signal Selection"
+	Description		"Signal Selection Block"
+      }
+      System {
+	Name			"IF_Out_Selector"
+	Location		[66, 45, 1314, 780]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "WheelOut.FL.Trq_WB"
+	  SID			  "74"
+	  Position		  [360, 20, 375, 30]
+	  ZOrder		  26
+	  BackgroundColor	  "red"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Trq_WB"
+	    PropagatedSignals	    "Trq_WB_Front"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "WheelOut.FR.Trq_WB"
+	  SID			  "75"
+	  Position		  [360, 110, 375, 120]
+	  ZOrder		  27
+	  BackgroundColor	  "red"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Trq_WB"
+	    PropagatedSignals	    "Trq_WB_Front"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "WheelOut.RL.Trq_WB"
+	  SID			  "76"
+	  Position		  [360, 200, 375, 210]
+	  ZOrder		  28
+	  BackgroundColor	  "red"
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Trq_WB"
+	    PropagatedSignals	    "Trq_WB_Rear"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "WheelOut.RR.Trq_WB"
+	  SID			  "77"
+	  Position		  [360, 290, 375, 300]
+	  ZOrder		  29
+	  BackgroundColor	  "red"
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Trq_WB"
+	    PropagatedSignals	    "Trq_WB_Rear"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Trq_DriveSrc_trg.d0"
+	  SID			  "78"
+	  Position		  [580, 340, 595, 350]
+	  ZOrder		  30
+	  BackgroundColor	  "red"
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    Name		    "d0"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Trq_DriveSrc_trg.d1"
+	  SID			  "79"
+	  Position		  [580, 370, 595, 380]
+	  ZOrder		  31
+	  BackgroundColor	  "red"
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    Name		    "d1"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Trq_DriveSrc_trg.d2"
+	  SID			  "80"
+	  Position		  [580, 400, 595, 410]
+	  ZOrder		  32
+	  BackgroundColor	  "red"
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    Name		    "d2"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Trq_DriveSrc_trg.d3"
+	  SID			  "81"
+	  Position		  [580, 430, 595, 440]
+	  ZOrder		  33
+	  BackgroundColor	  "red"
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    Name		    "d3"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  RateTransition
+	  Name			  "RateTransition"
+	  SID			  "49"
+	  Position		  [1080, 15, 1140, 35]
+	  ZOrder		  1
+	  OutPortSampleTime	  "str2num(get_param(bdroot,'FixedStep'))"
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Trq_DriveSrc_trg"
+	  SID			  "50"
+	  Ports			  [4, 1]
+	  Position		  [800, 120, 815, 200]
+	  ZOrder		  21
+	  Inputs		  "4"
+	  InheritFromInputs	  on
+	  Port {
+	    PortNumber		    1
+	    Name		    "Trq_DriveSrc_trg"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "WheelOut"
+	  SID			  "55"
+	  Ports			  [4, 1]
+	  Position		  [800, 20, 815, 100]
+	  ZOrder		  4
+	  Inputs		  "4"
+	  InheritFromInputs	  on
+	  Port {
+	    PortNumber		    1
+	    Name		    "WheelOut"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "WheelOut.FL"
+	  SID			  "56"
+	  Ports			  [3, 1]
+	  Position		  [580, 20, 595, 80]
+	  ZOrder		  5
+	  Inputs		  "3"
+	  InheritFromInputs	  on
+	  Port {
+	    PortNumber		    1
+	    Name		    "FL"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "WheelOut.FL.Trq_BrakeReg_trg"
+	  SID			  "57"
+	  Position		  [360, 80, 375, 90]
+	  ZOrder		  8
+	  Value			  "0"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Trq_BrakeReg_trg"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "WheelOut.FL.Trq_PB"
+	  SID			  "58"
+	  Position		  [360, 50, 375, 60]
+	  ZOrder		  7
+	  Value			  "0"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Trq_PB"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "WheelOut.FR"
+	  SID			  "60"
+	  Ports			  [3, 1]
+	  Position		  [580, 100, 595, 160]
+	  ZOrder		  9
+	  Inputs		  "3"
+	  InheritFromInputs	  on
+	  Port {
+	    PortNumber		    1
+	    Name		    "FR"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "WheelOut.FR.Trq_BrakeReg_trg"
+	  SID			  "61"
+	  Position		  [360, 170, 375, 180]
+	  ZOrder		  12
+	  Value			  "0"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Trq_BrakeReg_trg"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "WheelOut.FR.Trq_PB"
+	  SID			  "62"
+	  Position		  [360, 140, 375, 150]
+	  ZOrder		  11
+	  Value			  "0"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Trq_PB"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "WheelOut.RL"
+	  SID			  "64"
+	  Ports			  [3, 1]
+	  Position		  [580, 180, 595, 240]
+	  ZOrder		  13
+	  Inputs		  "3"
+	  InheritFromInputs	  on
+	  Port {
+	    PortNumber		    1
+	    Name		    "RL"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "WheelOut.RL.Trq_BrakeReg_trg"
+	  SID			  "65"
+	  Position		  [360, 260, 375, 270]
+	  ZOrder		  16
+	  Value			  "0"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Trq_BrakeReg_trg"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "WheelOut.RL.Trq_PB"
+	  SID			  "66"
+	  Position		  [360, 230, 375, 240]
+	  ZOrder		  15
+	  Value			  "0"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Trq_PB"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "WheelOut.RR"
+	  SID			  "68"
+	  Ports			  [3, 1]
+	  Position		  [580, 260, 595, 320]
+	  ZOrder		  17
+	  Inputs		  "3"
+	  InheritFromInputs	  on
+	  Port {
+	    PortNumber		    1
+	    Name		    "RR"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "WheelOut.RR.Trq_BrakeReg_trg"
+	  SID			  "69"
+	  Position		  [360, 350, 375, 360]
+	  ZOrder		  20
+	  Value			  "0"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Trq_BrakeReg_trg"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "WheelOut.RR.Trq_PB"
+	  SID			  "70"
+	  Position		  [360, 320, 375, 330]
+	  ZOrder		  19
+	  Value			  "0"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Trq_PB"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "cmBrakeOut"
+	  SID			  "72"
+	  Ports			  [2, 1]
+	  Position		  [1020, 20, 1035, 60]
+	  ZOrder		  3
+	  Inputs		  "2"
+	  InheritFromInputs	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "ToCM"
+	  SID			  "73"
+	  Position		  [1160, 20, 1180, 30]
+	  ZOrder		  2
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "RateTransition"
+	  SrcPort		  1
+	  DstBlock		  "ToCM"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  Labels		  [0, 0]
+	  SrcBlock		  "cmBrakeOut"
+	  SrcPort		  1
+	  DstBlock		  "RateTransition"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "WheelOut"
+	  ZOrder		  3
+	  Labels		  [0, 0]
+	  SrcBlock		  "WheelOut"
+	  SrcPort		  1
+	  Points		  [0, -30]
+	  DstBlock		  "cmBrakeOut"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "FL"
+	  ZOrder		  4
+	  Labels		  [0, 0]
+	  SrcBlock		  "WheelOut.FL"
+	  SrcPort		  1
+	  Points		  [0, -20]
+	  DstBlock		  "WheelOut"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Trq_PB"
+	  ZOrder		  5
+	  Labels		  [0, 0]
+	  SrcBlock		  "WheelOut.FL.Trq_PB"
+	  SrcPort		  1
+	  DstBlock		  "WheelOut.FL"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Trq_BrakeReg_trg"
+	  ZOrder		  6
+	  Labels		  [0, 0]
+	  SrcBlock		  "WheelOut.FL.Trq_BrakeReg_trg"
+	  SrcPort		  1
+	  DstBlock		  "WheelOut.FL"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "FR"
+	  ZOrder		  7
+	  Labels		  [0, 0]
+	  SrcBlock		  "WheelOut.FR"
+	  SrcPort		  1
+	  DstBlock		  "WheelOut"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Trq_PB"
+	  ZOrder		  8
+	  Labels		  [0, 0]
+	  SrcBlock		  "WheelOut.FR.Trq_PB"
+	  SrcPort		  1
+	  DstBlock		  "WheelOut.FR"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Trq_BrakeReg_trg"
+	  ZOrder		  9
+	  Labels		  [0, 0]
+	  SrcBlock		  "WheelOut.FR.Trq_BrakeReg_trg"
+	  SrcPort		  1
+	  DstBlock		  "WheelOut.FR"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "RL"
+	  ZOrder		  10
+	  Labels		  [0, 0]
+	  SrcBlock		  "WheelOut.RL"
+	  SrcPort		  1
+	  DstBlock		  "WheelOut"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "Trq_PB"
+	  ZOrder		  11
+	  Labels		  [0, 0]
+	  SrcBlock		  "WheelOut.RL.Trq_PB"
+	  SrcPort		  1
+	  DstBlock		  "WheelOut.RL"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Trq_BrakeReg_trg"
+	  ZOrder		  12
+	  Labels		  [0, 0]
+	  SrcBlock		  "WheelOut.RL.Trq_BrakeReg_trg"
+	  SrcPort		  1
+	  DstBlock		  "WheelOut.RL"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "RR"
+	  ZOrder		  13
+	  Labels		  [0, 0]
+	  SrcBlock		  "WheelOut.RR"
+	  SrcPort		  1
+	  DstBlock		  "WheelOut"
+	  DstPort		  4
+	}
+	Line {
+	  Name			  "Trq_PB"
+	  ZOrder		  14
+	  Labels		  [0, 0]
+	  SrcBlock		  "WheelOut.RR.Trq_PB"
+	  SrcPort		  1
+	  DstBlock		  "WheelOut.RR"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Trq_BrakeReg_trg"
+	  ZOrder		  15
+	  Labels		  [0, 0]
+	  SrcBlock		  "WheelOut.RR.Trq_BrakeReg_trg"
+	  SrcPort		  1
+	  DstBlock		  "WheelOut.RR"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "Trq_DriveSrc_trg"
+	  ZOrder		  16
+	  Labels		  [0, 0]
+	  SrcBlock		  "Trq_DriveSrc_trg"
+	  SrcPort		  1
+	  DstBlock		  "cmBrakeOut"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Trq_WB"
+	  ZOrder		  17
+	  Labels		  [0, 0]
+	  SrcBlock		  "WheelOut.FL.Trq_WB"
+	  SrcPort		  1
+	  DstBlock		  "WheelOut.FL"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Trq_WB"
+	  ZOrder		  18
+	  Labels		  [0, 0]
+	  SrcBlock		  "WheelOut.FR.Trq_WB"
+	  SrcPort		  1
+	  DstBlock		  "WheelOut.FR"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Trq_WB"
+	  ZOrder		  19
+	  Labels		  [0, 0]
+	  SrcBlock		  "WheelOut.RL.Trq_WB"
+	  SrcPort		  1
+	  DstBlock		  "WheelOut.RL"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Trq_WB"
+	  ZOrder		  20
+	  Labels		  [0, 0]
+	  SrcBlock		  "WheelOut.RR.Trq_WB"
+	  SrcPort		  1
+	  DstBlock		  "WheelOut.RR"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "d0"
+	  ZOrder		  21
+	  Labels		  [0, 0]
+	  SrcBlock		  "Trq_DriveSrc_trg.d0"
+	  SrcPort		  1
+	  DstBlock		  "Trq_DriveSrc_trg"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "d1"
+	  ZOrder		  22
+	  Labels		  [0, 0]
+	  SrcBlock		  "Trq_DriveSrc_trg.d1"
+	  SrcPort		  1
+	  DstBlock		  "Trq_DriveSrc_trg"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "d2"
+	  ZOrder		  23
+	  Labels		  [0, 0]
+	  SrcBlock		  "Trq_DriveSrc_trg.d2"
+	  SrcPort		  1
+	  DstBlock		  "Trq_DriveSrc_trg"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "d3"
+	  ZOrder		  24
+	  Labels		  [0, 0]
+	  SrcBlock		  "Trq_DriveSrc_trg.d3"
+	  SrcPort		  1
+	  DstBlock		  "Trq_DriveSrc_trg"
+	  DstPort		  4
+	}
+      }
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "notset"
+      SID		      "82"
+      Position		      [390, 175, 420, 205]
+      ZOrder		      -4
+      Value		      "-99999"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "ToCM"
+      SID		      "4"
+      Position		      [715, 115, 735, 125]
+      ZOrder		      -9
+      BackgroundColor	      "cyan"
+      IconDisplay	      "Port number"
+      OutDataTypeStr	      "Bus: cmBrakeOut"
+    }
+    Line {
+      ZOrder		      1
+      SrcBlock		      "FromCM"
+      SrcPort		      1
+      DstBlock		      "IF_In_Selector"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      2
+      SrcBlock		      "IF_Out_Selector"
+      SrcPort		      1
+      DstBlock		      "ToCM"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      3
+      SrcBlock		      "CfgInFromCM"
+      SrcPort		      1
+      DstBlock		      "CfgIF_In_Selector"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      4
+      SrcBlock		      "Brake Example"
+      SrcPort		      1
+      Points		      [40, 0]
+      Branch {
+	ZOrder			5
+	DstBlock		"IF_Out_Selector"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			6
+	Points			[0, 20]
+	DstBlock		"IF_Out_Selector"
+	DstPort			2
+      }
+    }
+    Line {
+      ZOrder		      7
+      SrcBlock		      "Brake Example"
+      SrcPort		      2
+      Points		      [35, 0]
+      Branch {
+	ZOrder			8
+	Points			[0, 20]
+	DstBlock		"IF_Out_Selector"
+	DstPort			4
+      }
+      Branch {
+	ZOrder			9
+	DstBlock		"IF_Out_Selector"
+	DstPort			3
+      }
+    }
+    Line {
+      Name		      "<VehicleClassId>"
+      ZOrder		      10
+      Labels		      [0, 0]
+      SrcBlock		      "CfgIF_In_Selector"
+      SrcPort		      1
+      DstBlock		      "CfgIF_In_Terminator"
+      DstPort		      1
+    }
+    Line {
+      Name		      "<Pedal>"
+      ZOrder		      11
+      Labels		      [0, 0]
+      SrcBlock		      "IF_In_Selector"
+      SrcPort		      1
+      DstBlock		      "Brake Example"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      12
+      SrcBlock		      "notset"
+      SrcPort		      1
+      Points		      [30, 0]
+      Branch {
+	ZOrder			13
+	Points			[0, -20]
+	Branch {
+	  ZOrder		  14
+	  DstBlock		  "IF_Out_Selector"
+	  DstPort		  7
+	}
+	Branch {
+	  ZOrder		  15
+	  Points		  [0, -20]
+	  Branch {
+	    ZOrder		    16
+	    Points		    [0, -20]
+	    DstBlock		    "IF_Out_Selector"
+	    DstPort		    5
+	  }
+	  Branch {
+	    ZOrder		    17
+	    DstBlock		    "IF_Out_Selector"
+	    DstPort		    6
+	  }
+	}
+      }
+      Branch {
+	ZOrder			18
+	DstBlock		"IF_Out_Selector"
+	DstPort			8
+      }
+    }
+    Annotation {
+      SID		      "83"
+      Name		      "For use with vehicle Examples/DemoCar_UserBrake_RTW"
+      Position		      [207, 267, 422, 281]
+      InternalMargins	      [0, 0, 0, 0]
+      FixedHeight	      off
+      FixedWidth	      off
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      ZOrder		      -3
+    }
+  }
+}
+MatData {
+  NumRecords		  1
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    F!<   8    (     @         %    \"     $    !     0         %  0 \"0    $    _    ;E-I9"
+    "P      <VEG3F%M90  8FQK3F%M90  =F%L=65S    =&]0;W)T    <V5L96-T960 <V5L261X      X    X    !@    @    &          4"
+    "    (     0    $    !          D    (            ,$ .    * 0   8    (     0         %    \"     $    0     0      "
+    "   .    .     8    (    !          %    \"     $    &     0         0    !@   %1R<5]70@  #@   #@    &    \"     0 "
+    "        !0    @    !    !@    $         $     8   !4<G%?4$(   X   !     !@    @    $          4    (     0   !    "
+    " !         !     0    5')Q7T)R86ME4F5G7W1R9PX    X    !@    @    $          4    (     0    8    !         !     &"
+    "    5')Q7U=\"   .    .     8    (    !          %    \"     $    &     0         0    !@   %1R<5]00@  #@   $     &"
+    "    \"     0         !0    @    !    $     $         $    !    !4<G%?0G)A:V5296=?=')G#@   #@    &    \"     0     "
+    "    !0    @    !    !@    $         $     8   !4<G%?5T(   X    X    !@    @    $          4    (     0    8    !  "
+    "       !     &    5')Q7U!\"   .    0     8    (    !          %    \"     $    0     0         0    $    %1R<5]\"<"
+    "F%K95)E9U]T<F<.    .     8    (    !          %    \"     $    &     0         0    !@   %1R<5]70@  #@   #@    &  "
+    "  \"     0         !0    @    !    !@    $         $     8   !4<G%?4$(   X   !     !@    @    $          4    (   "
+    "  0   !     !         !     0    5')Q7T)R86ME4F5G7W1R9PX    P    !@    @    $          4    (     0    (    !     "
+    "    !   @!D,   #@   #     &    \"     0         !0    @    !     @    $         $  \" &0Q   .    ,     8    (    !"
+    "          %    \"     $    \"     0         0  ( 9#(   X    P    !@    @    $          4    (     0    (    !     "
+    "    !   @!D,P  #@   $@%   &    \"     $         !0    @    !    $     $         #@   $@    &    \"     0         !"
+    "0    @    !    $@    $         $    !(   !7:&5E;$]U=\"Y&3\"Y4<G%?5T(        .    2     8    (    !          %    \""
+    "     $    2     0         0    $@   %=H965L3W5T+D9,+E1R<5]00@        X   !0    !@    @    $          4    (     0 "
+    "  !P    !         !     <    5VAE96Q/=70N1DPN5')Q7T)R86ME4F5G7W1R9P     .    2     8    (    !          %    \"   "
+    "  $    2     0         0    $@   %=H965L3W5T+D92+E1R<5]70@        X   !(    !@    @    $          4    (     0   !"
+    "(    !         !     2    5VAE96Q/=70N1E(N5')Q7U!\"        #@   %     &    \"     0         !0    @    !    '     "
+    "$         $    !P   !7:&5E;$]U=\"Y&4BY4<G%?0G)A:V5296=?=')G      X   !(    !@    @    $          4    (     0   !("
+    "    !         !     2    5VAE96Q/=70N4DPN5')Q7U=\"        #@   $@    &    \"     0         !0    @    !    $@    $"
+    "         $    !(   !7:&5E;$]U=\"Y23\"Y4<G%?4$(        .    4     8    (    !          %    \"     $    <     0    "
+    "     0    '    %=H965L3W5T+E),+E1R<5]\"<F%K95)E9U]T<F<     #@   $@    &    \"     0         !0    @    !    $@    "
+    "$         $    !(   !7:&5E;$]U=\"Y24BY4<G%?5T(        .    2     8    (    !          %    \"     $    2     0    "
+    "     0    $@   %=H965L3W5T+E)2+E1R<5]00@        X   !0    !@    @    $          4    (     0   !P    !         !  "
+    "   <    5VAE96Q/=70N4E(N5')Q7T)R86ME4F5G7W1R9P     .    2     8    (    !          %    \"     $    3     0       "
+    "  0    $P   %1R<5]$<FEV95-R8U]T<F<N9#        X   !(    !@    @    $          4    (     0   !,    !         !     "
+    "3    5')Q7T1R:79E4W)C7W1R9RYD,0      #@   $@    &    \"     0         !0    @    !    $P    $         $    !,   !4"
+    "<G%?1')I=F53<F-?=')G+F0R       .    2     8    (    !          %    \"     $    3     0         0    $P   %1R<5]$<"
+    "FEV95-R8U]T<F<N9#,       X   \"H P  !@    @    !          4    (     0   !     !          X    P    !@    @    $  "
+    "        4    (     0    $    !         !   0 P    #@   #     &    \"     0         !0    @    !     0    $        "
+    " $  ! #     .    ,     8    (    !          %    \"     $    !     0         0  $ ,     X    P    !@    @    $    "
+    "      4    (     0    $    !         !   0 P    #@   #     &    \"     0         !0    @    !     0    $         $"
+    "  ! #     .    ,     8    (    !          %    \"     $    !     0         0  $ ,     X    P    !@    @    $      "
+    "    4    (     0    $    !         !   0 P    #@   #     &    \"     0         !0    @    !     0    $         $  "
+    "! #     .    ,     8    (    !          %    \"     $    !     0         0  $ ,     X    P    !@    @    $        "
+    "  4    (     0    $    !         !   0 P    #@   #     &    \"     0         !0    @    !     0    $         $  ! "
+    "#     .    ,     8    (    !          %    \"     $    !     0         0  $ ,     X    P    !@    @    $          "
+    "4    (     0    $    !         !   0 P    #@   #     &    \"     0         !0    @    !     0    $         $  ! # "
+    "    .    ,     8    (    !          %    \"     $    !     0         0  $ ,     X    P    !@    @    $          4 "
+    "   (     0    $    !         !   0 P    #@   ,@$   &    \"     $         !0    @    !    $     $         #@   $   "
+    "  &    \"     0         !0    @    !    #0    $         $     T   !7:&5E;$]U=\"Y&3\"\\Q    #@   $     &    \"     "
+    "0         !0    @    !    #0    $         $     T   !7:&5E;$]U=\"Y&3\"\\R    #@   $     &    \"     0         !0  "
+    "  @    !    #0    $         $     T   !7:&5E;$]U=\"Y&3\"\\S    #@   $     &    \"     0         !0    @    !    #0"
+    "    $         $     T   !7:&5E;$]U=\"Y&4B\\Q    #@   $     &    \"     0         !0    @    !    #0    $         $"
+    "     T   !7:&5E;$]U=\"Y&4B\\R    #@   $     &    \"     0         !0    @    !    #0    $         $     T   !7:&5E"
+    ";$]U=\"Y&4B\\S    #@   $     &    \"     0         !0    @    !    #0    $         $     T   !7:&5E;$]U=\"Y23\"\\Q"
+    "    #@   $     &    \"     0         !0    @    !    #0    $         $     T   !7:&5E;$]U=\"Y23\"\\R    #@   $    "
+    " &    \"     0         !0    @    !    #0    $         $     T   !7:&5E;$]U=\"Y23\"\\S    #@   $     &    \"     0"
+    "         !0    @    !    #0    $         $     T   !7:&5E;$]U=\"Y24B\\Q    #@   $     &    \"     0         !0    "
+    "@    !    #0    $         $     T   !7:&5E;$]U=\"Y24B\\R    #@   $     &    \"     0         !0    @    !    #0   "
+    " $         $     T   !7:&5E;$]U=\"Y24B\\S    #@   $@    &    \"     0         !0    @    !    $@    $         $   "
+    " !(   !4<G%?1')I=F53<F-?=')G+S$        .    2     8    (    !          %    \"     $    2     0         0    $@   "
+    "%1R<5]$<FEV95-R8U]T<F<O,@        X   !(    !@    @    $          4    (     0   !(    !         !     2    5')Q7T1"
+    "R:79E4W)C7W1R9R\\S        #@   $@    &    \"     0         !0    @    !    $@    $         $    !(   !4<G%?1')I=F5"
+    "3<F-?=')G+S0        .    J (   8    (     0         %    \"     @    !     0         .    2     8    (    !       "
+    "   %    \"     $    2     0         0    $@   %=H965L3W5T+D9,+E1R<5]70@        X   !(    !@    @    $          4  "
+    "  (     0   !(    !         !     2    5VAE96Q/=70N1E(N5')Q7U=\"        #@   $@    &    \"     0         !0    @  "
+    "  !    $@    $         $    !(   !7:&5E;$]U=\"Y23\"Y4<G%?5T(        .    2     8    (    !          %    \"     $ "
+    "   2     0         0    $@   %=H965L3W5T+E)2+E1R<5]70@        X   !(    !@    @    $          4    (     0   !,   "
+    " !         !     3    5')Q7T1R:79E4W)C7W1R9RYD,       #@   $@    &    \"     0         !0    @    !    $P    $    "
+    "     $    !,   !4<G%?1')I=F53<F-?=')G+F0Q       .    2     8    (    !          %    \"     $    3     0         0"
+    "    $P   %1R<5]$<FEV95-R8U]T<F<N9#(       X   !(    !@    @    $          4    (     0   !,    !         !     3  "
+    "  5')Q7T1R:79E4W)C7W1R9RYD,P      #@   \"@\"   &    \"     $         !0    @    !    \"     $         #@   #@    &"
+    "    \"     8         !0    @    !     0    $         \"0    @           #P/PX    X    !@    @    &          4    ("
+    "     0    $    !          D    (            $$ .    .     8    (    !@         %    \"     $    !     0         ) "
+    "   \"            !Q #@   #@    &    \"     8         !0    @    !     0    $         \"0    @            D0 X    X"
+    "    !@    @    &          4    (     0    $    !          D    (            *D .    .     8    (    !@         %  "
+    "  \"     $    !     0         )    \"            \"Q #@   #@    &    \"     8         !0    @    !     0    $     "
+    "    \"0    @            N0 X    X    !@    @    &          4    (     0    $    !          D    (            ,$ "
+  }
+}

@@ -1,0 +1,12 @@
+APPLICATION	CarMaker 8.1 - Car_Generic #52 (linux64-8.1)
+COMPILED	pt@pluto.ipg 2019-11-08 10:56:52
+FIRST_INIT	(internal default used)	2021-02-10 23:32:01
+TIME	0.000
+SIM_END			0s	0m
+IDLE	23:32:02
+SIM_START	Greisheim_sim_turnRight	2021-02-10 23:32:04
+TIME	0.000
+SIMULATE	Greisheim_sim_turnRight
+
+TIME	300.006
+SIM_END		Greisheim_sim_turnRight	300s	0.234947m

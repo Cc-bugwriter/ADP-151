@@ -1,0 +1,15 @@
+APPLICATION	CarMaker 8.1 - Car_Generic #52 (linux64-8.1)
+COMPILED	pt@pluto.ipg 2019-11-08 10:56:52
+FIRST_INIT	(internal default used)	2021-02-10 20:09:22
+TIME	0.000
+SIM_END			0s	0m
+IDLE	20:09:23
+SIM_START	Greisheim_sim_turnRight	2021-02-10 20:09:31
+TIME	0.000
+SIMULATE	Greisheim_sim_turnRight
+
+TIME	91.204
+ERROR		Embedded FARoadSensor Route:  xyz (-159.76 -49.53 0.03) at 156.659 not found on Road
+SIM_ABORT	Greisheim_sim_turnRight	91.204s	163.348m
+SHUTDOWN	CarMaker quick shutdown initiated
+

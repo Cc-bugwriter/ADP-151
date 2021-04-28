@@ -1,0 +1,93 @@
+APPLICATION	CarMaker 8.1 - Car_Generic #52 (linux64-8.1)
+COMPILED	pt@pluto.ipg 2019-11-08 10:56:52
+FIRST_INIT	(internal default used)	2021-01-05 11:59:43
+TIME	0.000
+SIM_END			0s	0m
+IDLE	11:59:44
+SIM_START	Examples/VehicleDynamics/Braking/Braking	2021-01-05 11:59:44
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Braking/Braking
+
+TIME	44.018
+SIM_END		Examples/VehicleDynamics/Braking/Braking	44.009s	671.365m
+TIME	48.290
+SIM_START	Examples/VehicleDynamics/Braking/Braking	2021-01-05 12:00:28
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Braking/Braking
+
+TIME	44.018
+SIM_END		Examples/VehicleDynamics/Braking/Braking	44.009s	671.365m
+SIM_START	Examples/VehicleDynamics/Braking/Braking	2021-01-05 12:00:45
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Braking/Braking
+
+TIME	44.018
+SIM_END		Examples/VehicleDynamics/Braking/Braking	44.009s	671.365m
+TIME	65.094
+SIM_START	Examples/VehicleDynamics/Braking/Braking	2021-01-05 12:04:18
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Braking/Braking
+
+TIME	44.018
+SIM_END		Examples/VehicleDynamics/Braking/Braking	44.009s	671.365m
+SIM_START	Examples/VehicleDynamics/Braking/Braking	2021-01-05 12:04:35
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Braking/Braking
+
+TIME	44.012
+SIM_END		Examples/VehicleDynamics/Braking/Braking	44.009s	671.365m
+TIME	55.164
+SIM_START	Examples/VehicleDynamics/Braking/Braking	2021-01-05 12:06:50
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Braking/Braking
+
+TIME	44.012
+SIM_END		Examples/VehicleDynamics/Braking/Braking	44.009s	671.365m
+TIME	163.950
+SIM_START	Examples/DriverAssistance/_QuickStartGuide/Step1_CreateRoadAndManeuver	2021-01-05 12:27:13
+TIME	0.000
+SIMULATE	Examples/DriverAssistance/_QuickStartGuide/Step1_CreateRoadAndManeuver
+
+TIME	60.003
+SIM_END		Examples/DriverAssistance/_QuickStartGuide/Step1_CreateRoadAndManeuver	60s	852.138m
+TIME	125.135
+SIM_START	Examples/DriverAssistance/_QuickStartGuide/Step1_CreateRoadAndManeuver	2021-01-05 12:38:35
+TIME	0.000
+SIMULATE	Examples/DriverAssistance/_QuickStartGuide/Step1_CreateRoadAndManeuver
+
+TIME	60.003
+SIM_END		Examples/DriverAssistance/_QuickStartGuide/Step1_CreateRoadAndManeuver	60s	852.138m
+TIME	70.877
+SIM_START	Examples/DriverAssistance/_QuickStartGuide/Step1_CreateRoadAndManeuver	2021-01-05 12:40:50
+TIME	0.000
+SIMULATE	Examples/DriverAssistance/_QuickStartGuide/Step1_CreateRoadAndManeuver
+
+TIME	60.004
+SIM_END		Examples/DriverAssistance/_QuickStartGuide/Step1_CreateRoadAndManeuver	60s	852.138m
+TIME	81.390
+SIM_START	Examples/DriverAssistance/_QuickStartGuide/Step1_CreateRoadAndManeuver	2021-01-05 12:44:45
+TIME	0.000
+SIMULATE	Examples/DriverAssistance/_QuickStartGuide/Step1_CreateRoadAndManeuver
+
+TIME	60.003
+SIM_END		Examples/DriverAssistance/_QuickStartGuide/Step1_CreateRoadAndManeuver	60s	852.138m
+TIME	1777.874
+SIM_START	Examples/BasicFunctions/Traffic/Basics_MovingObjects	2021-01-05 19:01:47
+TIME	0.000
+SIMULATE	Examples/BasicFunctions/Traffic/Basics_MovingObjects
+
+TIME	50.003
+SIM_END		Examples/BasicFunctions/Traffic/Basics_MovingObjects	50s	1116.67m
+SIM_START	Examples/BasicFunctions/Traffic/Basics_MovingObjects	2021-01-05 19:02:18
+TIME	0.000
+SIMULATE	Examples/BasicFunctions/Traffic/Basics_MovingObjects
+
+TIME	37.792
+SIM_END		Examples/BasicFunctions/Traffic/Basics_MovingObjects	37.787s	844.611m
+TIME	117.552
+SIM_START	Examples/BasicFunctions/Traffic/OncomingObjects	2021-01-05 19:15:49
+TIME	0.000
+SIMULATE	Examples/BasicFunctions/Traffic/OncomingObjects
+
+TIME	207.300
+SIM_END		Examples/BasicFunctions/Traffic/OncomingObjects	207.295s	3359.65m

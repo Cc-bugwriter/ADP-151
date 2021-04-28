@@ -1,0 +1,21 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = Scenario-LaneConfig 1.0
+FileCreator = CarMaker 8.1 2019-11-07
+
+Name = My_Motorway
+Prio = 1
+
+LaneL.0 = road 3.5
+LaneL.1 = road 3.5
+LaneL.2 = pedestrian 1.0
+LaneR.0 = road 3.5
+LaneR.1 = road 3.5
+LaneR.2 = pedestrian 1.0
+
+RoadMarkingL.0 = line 2.0 4.0 0.15 {1.0 1.0 1.0}
+RoadMarkingL.1 = line 2.0 4.0 0.15 {1.0 1.0 1.0}
+RoadMarkingL.2 = line 2.0 4.0 0.15 {1.0 1.0 1.0}
+RoadMarkingR.0 = line 2.0 4.0 0.15 {1.0 1.0 1.0}
+RoadMarkingR.1 = line 2.0 4.0 0.15 {1.0 1.0 1.0}
+RoadMarkingR.2 = line 2.0 4.0 0.15 {1.0 1.0 1.0}
+RoadMarkingC = dbl 2.0 4.0 0.15 {1.0 1.0 1.0}

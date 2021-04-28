@@ -1,0 +1,27 @@
+APPLICATION	CarMaker 8.1 - Car_Generic #52 (linux64-8.1)
+COMPILED	pt@pluto.ipg 2019-11-08 10:56:52
+FIRST_INIT	(internal default used)	2021-02-12 21:24:48
+TIME	0.000
+SIM_END			0s	0m
+IDLE	21:24:49
+SIM_START	Greisheim_sim_Stopsign	2021-02-12 21:24:50
+TIME	0.012
+ERROR		Traffic object 19: failed to select route -1
+ERROR		Can't get parameters of traffic object 19 (2)
+SIM_ABORT	Greisheim_sim_Stopsign	0s	0m
+TIME	4.262
+SIM_START	Greisheim_sim_Stopsign	2021-02-12 21:25:33
+TIME	0.000
+SIMULATE	Greisheim_sim_Stopsign
+
+TIME	255.230
+SIM_END		Greisheim_sim_Stopsign	255.225s	2193.61m
+TIME	271.058
+SIM_START	Greisheim_sim_Stopsign	2021-02-12 21:32:27
+TIME	0.000
+SIMULATE	Greisheim_sim_Stopsign
+
+TIME	214.406
+SHUTDOWN	CarMaker quick shutdown initiated
+
+SIM_END		Greisheim_sim_Stopsign	214.406s	1840.7m

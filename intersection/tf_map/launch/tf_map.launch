@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<launch>
+  <!-- all possble input arguments are listed here -->
+  <param name="use_sim_time" value="true" />
+
+  <param name="/origin_frame" value="/map"/>
+  <param name="/vehicle_frame" value="/base_link"/>
+  <param name="/refer_line_num" value="0"/>
+
+
+  <arg name="model" default="$(find tf_map)/urdf/s450_red.urdf.xacro"/>
+  <arg name="rvizconfig" default="$(find tf_map)/cfig/visualization.rviz" />
+  <arg name="gui" default="false" />
+
+  <param name="robot_description" command="$(find xacro)/xacro $(arg model) " />
+  <param name="use_gui" value="$(arg gui)"/>
+
+  <!-- relativ position and angle for simulation -->
+  <node pkg="tf" type="static_transform_publisher" name="velodyne_to_baselink" args="2.3 0.00 1.8 0.0 0.0 0.0 /base_link /velodyne 50" />
+  <node pkg="tf" type="static_transform_publisher" name="radar_to_baselink" args="4.6 0.00 0.4 0.0 0.0 0.0 /base_link /radar 10"/>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
+  <node name="tf_map_node" pkg="tf_map" type="tf_map_node" respawn="true" output="screen"/>
+
+<!-- coordinate transformation to acquire fused objects" -->
+  <include file="$(find coordinate_transformation)/launch/coordinate_transformation.launch" />
+
+</launch>

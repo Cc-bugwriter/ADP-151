@@ -1,0 +1,128 @@
+
+
+SYSTEM_START	-	cui-ThinkPad-P1	cui-ThinkPad-P1	2021-01-05 11:59:43
+
+
+SYSTEM_INFO	CarMaker 8.1 - Car_Generic #52	pt@pluto.ipg 2019-11-08 10:56:52	(8.1 pt@pluto.ipg 2019-11-08 10:56:51)
+SIM	1609844383	cui-ThinkPad-P1			0	0	0
+SIM	1609844384	cui-ThinkPad-P1	cui	Examples/VehicleDynamics/Braking/Braking	0	44.009	671.365
+SIM	1609844428	cui-ThinkPad-P1	cui	Examples/VehicleDynamics/Braking/Braking	0	44.009	671.365
+SIM	1609844445	cui-ThinkPad-P1	cui	Examples/VehicleDynamics/Braking/Braking	0	44.009	671.365
+SIM	1609844658	cui-ThinkPad-P1	cui	Examples/VehicleDynamics/Braking/Braking	0	44.009	671.365
+SIM	1609844675	cui-ThinkPad-P1	cui	Examples/VehicleDynamics/Braking/Braking	0	44.009	671.365
+SIM	1609844810	cui-ThinkPad-P1	cui	Examples/VehicleDynamics/Braking/Braking	0	44.009	671.365
+SIM	1609846033	cui-ThinkPad-P1	cui	Examples/DriverAssistance/_QuickStartGuide/Step1_CreateRoadAndManeuver	0	60	852.138
+SIM	1609846715	cui-ThinkPad-P1	cui	Examples/DriverAssistance/_QuickStartGuide/Step1_CreateRoadAndManeuver	0	60	852.138
+SIM	1609846850	cui-ThinkPad-P1	cui	Examples/DriverAssistance/_QuickStartGuide/Step1_CreateRoadAndManeuver	0	60	852.138
+SIM	1609847085	cui-ThinkPad-P1	cui	Examples/DriverAssistance/_QuickStartGuide/Step1_CreateRoadAndManeuver	0	60	852.138
+SIM	1609869707	cui-ThinkPad-P1	cui	Examples/BasicFunctions/Traffic/Basics_MovingObjects	0	50	1116.67
+SIM	1609869738	cui-ThinkPad-P1	cui	Examples/BasicFunctions/Traffic/Basics_MovingObjects	0	37.787	844.611
+SIM	1609870549	cui-ThinkPad-P1	cui	Examples/BasicFunctions/Traffic/OncomingObjects	0	207.295	3359.65
+
+
+SYSTEM_START	-	cui-ThinkPad-P1	cui-ThinkPad-P1	2021-01-06 15:32:14
+
+
+SYSTEM_INFO	CarMaker 8.1 - Car_Generic #52	pt@pluto.ipg 2019-11-08 10:56:52	(8.1 pt@pluto.ipg 2019-11-08 10:56:51)
+SIM	1609943537	cui-ThinkPad-P1			0	0	0
+SIM	1609943539	cui-ThinkPad-P1	cui	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs	0	27.254	214.656
+SIM	1609943549	cui-ThinkPad-P1	cui	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs	0	20.687	214.313
+SIM	1609943558	cui-ThinkPad-P1	cui	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs	0	16.958	213.875
+SIM	1609943565	cui-ThinkPad-P1	cui	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs	0	14.505	213.653
+SIM	1609943572	cui-ThinkPad-P1	cui	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs	0	12.821	213.15
+SIM	1609943578	cui-ThinkPad-P1	cui	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRs	0	11.636	212.654
+SIM	1609943584	cui-ThinkPad-P1	cui	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	0	77.997	642.878
+SIM	1609943612	cui-ThinkPad-P1	cui	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	0	40.175	430.846
+SIM	1609943627	cui-ThinkPad-P1	cui	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	0	27.71	363.208
+SIM	1609943638	cui-ThinkPad-P1	cui	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	0	21.337	327.52
+SIM	1609948635	cui-ThinkPad-P1	cui	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	2	0	327.52
+SIM	1609948735	cui-ThinkPad-P1	cui	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	2	0	0
+SIM	1609948773	cui-ThinkPad-P1	cui	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	2	0	0
+SIM	1609948855	cui-ThinkPad-P1	cui	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	2	0	0
+SIM	1609948982	cui-ThinkPad-P1	cui	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	0	77.015	1064.33
+SIM	1609949023	cui-ThinkPad-P1	cui	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	0	77.015	1064.33
+SIM	1609949196	cui-ThinkPad-P1	cui	Examples/DriverAssistance/EuroNCAP/AEB_Interurban/Runs/AEB_CCRm	0	77.015	1064.33
+
+
+SYSTEM_START	-	cui-ThinkPad-P1	cui-ThinkPad-P1	2021-01-06 17:31:23
+
+
+SYSTEM_INFO	CarMaker 8.1 - Car_Generic #52	pt@pluto.ipg 2019-11-08 10:56:52	(8.1 pt@pluto.ipg 2019-11-08 10:56:51)
+SIM	1609950686	cui-ThinkPad-P1			0	0	0
+SIM	1609950687	cui-ThinkPad-P1	cui	unknown	0	117.096	2029.74
+SIM	1609950727	cui-ThinkPad-P1	cui	unknown	0	26.004	323.952
+
+
+SYSTEM_START	-	cui-ThinkPad-P1	cui-ThinkPad-P1	2021-01-06 17:47:45
+
+
+SYSTEM_INFO	CarMaker 8.1 - Car_Generic #52	pt@pluto.ipg 2019-11-08 10:56:52	(8.1 pt@pluto.ipg 2019-11-08 10:56:51)
+SIM	1609951668	cui-ThinkPad-P1			0	0	0
+SIM	1609951669	cui-ThinkPad-P1	cui	unknown	0	60	410.979
+SIM	1609951696	cui-ThinkPad-P1	cui	unknown	0	60	410.979
+SIM	1609951850	cui-ThinkPad-P1	cui	unknown	0	60	762.26
+SIM	1609951919	cui-ThinkPad-P1	cui	unknown	0	40.09	486.406
+SIM	1609952140	cui-ThinkPad-P1	cui	unknown	0	60	619.323
+SIM	1609952654	cui-ThinkPad-P1	cui	unknown	1	0	619.323
+SIM	1609952734	cui-ThinkPad-P1	cui	unknown	1	0	0
+SIM	1609952746	cui-ThinkPad-P1	cui	unknown	0	29.841	201.21
+SIM	1609952785	cui-ThinkPad-P1	cui	unknown	0	32.729	240.562
+SIM	1609952889	cui-ThinkPad-P1	cui	unknown	0	180	999.045
+SIM	1609953008	cui-ThinkPad-P1	cui	unknown	0	180	1476.38
+SIM	1609953144	cui-ThinkPad-P1	cui	Greisheim_sim	0	240	2178.36
+SIM	1609953304	cui-ThinkPad-P1	cui	Greisheim_sim	0	240	1758.29
+SIM	1609953372	cui-ThinkPad-P1	cui	Greisheim_sim	0	300	1896.31
+SIM	1609953453	cui-ThinkPad-P1	cui	Greisheim_sim	0	24.675	304.704
+SIM	1609953464	cui-ThinkPad-P1	cui	Greisheim_sim	0	10.044	102.291
+SIM	1609953538	cui-ThinkPad-P1	cui	Greisheim_sim	0	11.577	123.721
+SIM	1609953555	cui-ThinkPad-P1	cui	Greisheim_sim	0	14.515	164.611
+SIM	1609953582	cui-ThinkPad-P1	cui	Greisheim_sim	0	24.059	296.149
+SIM	1609953667	cui-ThinkPad-P1	cui	Greisheim_sim	0	10.284	104.612
+SIM	1609953682	cui-ThinkPad-P1	cui	Greisheim_sim	0	36.416	197.021
+SIM	1609953732	cui-ThinkPad-P1	cui	Greisheim_sim	0	67.171	624.039
+SIM	1609953938	cui-ThinkPad-P1	cui	Greisheim_sim	0	201.052	1522.6
+
+
+SYSTEM_START	-	cui-ThinkPad-P1	cui-ThinkPad-P1	2021-01-06 20:13:23
+
+
+SYSTEM_INFO	CarMaker 8.1 - Car_Generic #52	pt@pluto.ipg 2019-11-08 10:56:52	(8.1 pt@pluto.ipg 2019-11-08 10:56:51)
+
+
+SYSTEM_START	-	cui-ThinkPad-P1	cui-ThinkPad-P1	2021-01-06 20:16:16
+
+
+SYSTEM_INFO	CarMaker 8.1 - Car_Generic #52	pt@pluto.ipg 2019-11-08 10:56:52	(8.1 pt@pluto.ipg 2019-11-08 10:56:51)
+
+
+SYSTEM_START	-	cui-ThinkPad-P1	cui-ThinkPad-P1	2021-01-06 20:16:55
+
+
+SYSTEM_INFO	CarMaker 8.1 - Car_Generic #52	pt@pluto.ipg 2019-11-08 10:56:52	(8.1 pt@pluto.ipg 2019-11-08 10:56:51)
+SIM	1609960617	cui-ThinkPad-P1			0	0	0
+
+
+SYSTEM_START	-	cui-ThinkPad-P1	cui-ThinkPad-P1	2021-01-06 20:51:48
+
+
+SYSTEM_INFO	CarMaker 8.1 - Car_Generic #52	pt@pluto.ipg 2019-11-08 10:56:52	(8.1 pt@pluto.ipg 2019-11-08 10:56:51)
+SIM	1609962711	cui-ThinkPad-P1			0	0	0
+
+
+SYSTEM_START	-	cui-ThinkPad-P1	cui-ThinkPad-P1	2021-01-06 20:54:11
+
+
+SYSTEM_INFO	CarMaker 8.1 - Car_Generic #52	pt@pluto.ipg 2019-11-08 10:56:52	(8.1 pt@pluto.ipg 2019-11-08 10:56:51)
+SIM	1609962854	cui-ThinkPad-P1			0	0	0
+SIM	1609963055	cui-ThinkPad-P1	cui	Greisheim_sim	0	300	1679.51
+
+
+SYSTEM_START	-	cui-ThinkPad-P1	cui-ThinkPad-P1	2021-01-06 22:08:08
+
+
+SYSTEM_INFO	CarMaker 8.1 - Car_Generic #52	pt@pluto.ipg 2019-11-08 10:56:52	(8.1 pt@pluto.ipg 2019-11-08 10:56:51)
+SIM	1609967291	cui-ThinkPad-P1			0	0	0
+SIM	1609972264	cui-ThinkPad-P1	cui	Greisheim_sim	0	300	1679.51
+SIM	1609972494	cui-ThinkPad-P1	cui	Greisheim_sim	0	300	1679.51
+SIM	1609972725	cui-ThinkPad-P1	cui	Greisheim_sim	0	5.422	39.3646
+SIM	1609972787	cui-ThinkPad-P1	cui	Greisheim_sim	0	80.28	711.43

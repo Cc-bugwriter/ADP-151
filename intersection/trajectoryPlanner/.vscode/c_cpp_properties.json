@@ -1,0 +1,36 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/ltsummer/Documents/city_planning/Traj/devel/include/**",
+        "/home/ltsummer/turtle/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/ltsummer/Documents/city_planning/Traj/src/coordinate_transformation/include/**",
+        "/home/ltsummer/Documents/city_planning/Traj/src/cross_fsm/include/**",
+        "/home/ltsummer/turtle/src/external/gazebo_grasp_plugin/include/**",
+        "/home/ltsummer/turtle/src/hector/hector_localization/hector_pose_estimation/include/**",
+        "/home/ltsummer/turtle/src/hector/hector_localization/hector_pose_estimation_core/include/**",
+        "/home/ltsummer/Documents/city_planning/Traj/src/mpc_planer_helpers/include/**",
+        "/home/ltsummer/turtle/src/robot_self_filter/include/**",
+        "/home/ltsummer/turtle/src/external/roboticsgroup_gazebo_plugins/include/**",
+        "/home/ltsummer/Documents/city_planning/Traj/src/tf_map/include/**",
+        "/home/ltsummer/Documents/city_planning/Traj/src/trajectoryPlanner/include/**",
+        "/home/ltsummer/turtle/src/turtlebot/tuda_turtlebot3_gripper/tuda_turtlebot3_grasp_controller/include/**",
+        "/home/ltsummer/turtle/src/turtlebot/tuda_turtlebot3_ros_control/include/**",
+        "/home/ltsummer/turtle/src/tuda_turtlebot3_exercises/turtlebot3_arm_controller_exercise/include/**",
+        "/home/ltsummer/turtle/src/tuda_turtlebot3_exercises/turtlebot3_diff_drive_exercise/include/**",
+        "/home/ltsummer/turtle/src/turtlebot/tuda_turtlebot3_moveit_planning_student/turtlebot3_ik_moveit_plugin/include/**",
+        "/home/ltsummer/turtle/src/tuda_turtlebot3_exercises/turtlebot3_ik_solver_exercise/include/**",
+        "/home/ltsummer/turtle/src/turtlebot/tuda_turtlebot3_moveit_planning_student/turtlebot3_moveit_planning/include/**",
+        "/home/ltsummer/Documents/city_planning/Traj/src/waypoint_loader/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

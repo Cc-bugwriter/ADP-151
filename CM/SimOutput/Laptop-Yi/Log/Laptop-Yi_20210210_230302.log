@@ -1,0 +1,16 @@
+APPLICATION	CarMaker 8.1 - Car_Generic #52 (linux64-8.1)
+COMPILED	pt@pluto.ipg 2019-11-08 10:56:52
+FIRST_INIT	(internal default used)	2021-02-10 23:03:02
+TIME	0.000
+SIM_END			0s	0m
+IDLE	23:03:03
+SIM_START	Greisheim_sim_turnRight	2021-02-10 23:03:14
+TIME	0.000
+SIMULATE	Greisheim_sim_turnRight
+
+TIME	95.460
+ERROR		Vehicle leaves road at about x=-156.567, y=-44.1598 TireNo=1
+SIM_ABORT	Greisheim_sim_turnRight	94.076s	159.323m
+TIME	101.622
+SHUTDOWN	CarMaker quick shutdown initiated
+

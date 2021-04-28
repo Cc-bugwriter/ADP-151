@@ -1,0 +1,26 @@
+Logfile - Project update to CarMaker 8.1
+===============================================================================
+
+Start: 2021-01-06 18:29:27
+
+Cleaning up temporary files...
+  >> Finished.
+
+Creating backup ...
+  -  Copy source code files...
+  >> Finished.
+
+Deleting old template files...
+  >> Finished.
+
+Copying new files to project directory...
+  >> Finished.
+
+Searching for old files in project directory...
+  >> Finished.
+
+-------------------------------------------------------------------------------
+Update finished successfully. No errors occured
+-------------------------------------------------------------------------------
+
+End: 2021-01-06 18:29:41

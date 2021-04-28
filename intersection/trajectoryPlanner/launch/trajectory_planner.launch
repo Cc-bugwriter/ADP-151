@@ -1,0 +1,10 @@
+<launch>
+
+    <param name="use_sim_time" value="true" />
+
+    <node name="trajTalker" pkg="trajectoryPlanner" type="trajectoryPlanner_node" respawn="true" output="screen"/>
+    <include file="$(find cross_fsm)/launch/cross_fsm.launch" />
+    <include file="$(find waypoint_loader)/launch/waypoint_loader.launch" />
+
+</launch>
+

@@ -1,0 +1,26 @@
+APPLICATION	CarMaker 8.1 - Car_Generic #52 (linux64-8.1)
+COMPILED	pt@pluto.ipg 2019-11-08 10:56:52
+FIRST_INIT	(internal default used)	2021-01-28 15:18:14
+TIME	0.000
+SIM_END			0s	0m
+IDLE	15:18:15
+SIM_START	Greisheim_sim	2021-01-28 15:18:32
+TIME	0.022
+ERROR		Traffic object 19: Start road position is outside of route/path length
+ERROR		Can't get parameters of traffic object 19 (2)
+SIM_ABORT	Greisheim_sim	0s	0m
+SIM_START	Greisheim_sim	2021-01-28 15:18:43
+TIME	0.000
+SIMULATE	Greisheim_sim
+
+TIME	27.326
+SIM_END		Greisheim_sim	27.323s	109.963m
+TIME	31.874
+SIM_START	Greisheim_sim	2021-01-28 15:20:24
+TIME	0.000
+SIMULATE	Greisheim_sim
+
+TIME	2.493
+SIM_END		Greisheim_sim	2.488s	8.20795m
+SHUTDOWN	CarMaker quick shutdown initiated
+
